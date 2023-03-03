@@ -1,0 +1,89 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#0dedf5;
+  }
+  
+  .img1, .img2, .img3{
+    position:relative;
+    opacity:1;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .img1{
+    background:url("https://thumbs.dreamstime.com/b/new-skills-knowledge-webinar-training-business-internet-technology-concept-new-skills-knowledge-webinar-training-business-internet-121274023.jpg");
+    background-color: #3df7ed;
+    background-size: cover;
+    height: 500px;
+    position: center;
+  }
+  
+  .img2{
+    background-image:url('https://www.epo.org/about-us/annual-reports-statistics/statistics/2020/digital-technologies/TopVisual.jpg?lenya.module=svg&height=283&width=761');
+    background-color: #9b8383;
+    background-size: cover;
+    height: 500px;
+    position: center;
+  }
+  
+  .img3{
+    background-image:url('https://t4.ftcdn.net/jpg/03/08/69/75/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg');
+    background-color: #433d63;
+    background-size: cover;
+    height: 500px;
+    position: center;
+
+  }
+  
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  
+  .section-light{
+    background-color:#f4f4f4;
+    color:#948696;
+  }
+  
+  .section-dark{
+    background-color:#020202;
+    color:#ddd;
+  }
+  
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+  
+  @media(max-width:568px){
+    .img1, .img2, .img3{
+      background-attachment:scroll;
+    }
+  }
+  
